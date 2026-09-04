@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Podcast Network & Studio — AETHERIA AUDIO</title>
+  <meta name="description" content="Learn about AETHERIA AUDIO's history, podcast broadcasting philosophy, leadership team, studio tech, and global audio correspondent network.">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Background Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Header Top Info Bar & Main Navigation Header Wrapper -->
+  <header class="news-page-header">
+    
+
+
+    <!-- Main Navigation Header -->
+    <div class="main-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon"><i class="fas fa-podcast"></i></div>
+          AETHERIA <span class="brand-tag">AUDIO v2.6</span>
+        </a>
+
+        <!-- PODCAST NAVIGATION MENU -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">HOME PODCASTS</a></li>
+          <li><a href="news.html" class="nav-link">PODCAST EPISODES</a></li>
+          <li><a href="categories.html" class="nav-link">SHOW CHANNELS</a></li>
+          <li><a href="about.html" class="nav-link active">ABOUT STUDIO</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-header-sub" onclick="document.getElementById('newsletter-box').scrollIntoView({behavior:'smooth'})">
+            <i class="fas fa-headphones"></i> JOIN AUDIO NETWORK
+          </button>
+          <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    
+    <!-- SPLIT LAYOUT HERO SECTION -->
+    <section class="about-split-hero">
+      <div class="container split-hero-container">
+        
+        <!-- LEFT SIDE: HEADING, SUBHEADING, AND CTAS -->
+        <div class="split-hero-left">
+          <div class="hero-pill-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-txt"><i class="fas fa-broadcast-tower"></i> THE ANTI-GRAVITY AUDIO NETWORK</span>
+          </div>
+
+          <h1 class="split-hero-headline">
+            Redefining Podcast <span class="serif-italic-accent">Journalism</span> For Spatial Audio Era
+          </h1>
+
+          <p class="split-hero-desc">
+            AETHERIA AUDIO was built on a single conviction: audio broadcasting must transcend flat formats. We record and broadcast high-fidelity spatial podcast dispatches live from Station 07 LEO Array.
+          </p>
+
+          <!-- CTAS GROUP -->
+          <div class="split-hero-ctas">
+            <button class="btn-split-primary" onclick="document.getElementById('about-contact-form').scrollIntoView({behavior:'smooth'})">
+              <i class="fas fa-paper-plane"></i> Submit Podcast Pitch
+            </button>
+            <a href="categories.html" class="btn-split-secondary">
+              <i class="fas fa-play"></i> Explore Shows
+            </a>
+          </div>
+
+          <!-- MINI METRICS ROW -->
+          <div class="split-metrics-row">
+            <div class="metric-item">
+              <span class="metric-val">4.8M+</span>
+              <span class="metric-lbl">Monthly Streamers</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">140+</span>
+              <span class="metric-lbl">Episodes Live</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-item">
+              <span class="metric-val">99.9%</span>
+              <span class="metric-lbl">Uptime Stream</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: PRODUCT VISUAL & STUDIO CONTROL DASHBOARD MOCKUP -->
+        <div class="split-hero-right">
+          <div class="studio-visual-wrapper">
+            <div class="visual-glow-ring"></div>
+            
+            <!-- STUDIO GLASS CARD MOCKUP -->
+            <div class="studio-glass-mockup">
+              <!-- Top Mockup Toolbar -->
+              <div class="mockup-bar">
+                <div class="mockup-dots">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mockup-title-tag">
+                  <i class="fas fa-signal" style="color:#00f2fe;"></i> STATION 07 • SPATIAL AUDIO CONSOLE
+                </div>
+              </div>
+
+              <!-- Main Visual Body -->
+              <div class="mockup-inner-body">
+                <!-- Studio Image Preview -->
+                <div class="mockup-studio-banner">
+                  <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80" alt="Podcast Studio">
+                  <div class="banner-badge"><span class="pulse-red"></span> ON AIR LIVE</div>
+                </div>
+
+                <!-- Studio Telemetry Grid -->
+                <div class="mockup-telemetry-grid">
+                  <div class="telemetry-box">
+                    <span class="telemetry-lbl">FREQUENCY</span>
+                    <span class="telemetry-val">441.8 MHz</span>
+                  </div>
+                  <div class="telemetry-box">
+                    <span class="telemetry-lbl">BITRATE</span>
+                    <span class="telemetry-val">320 Kbps HQ</span>
+                  </div>
+                  <div class="telemetry-box">
+                    <span class="telemetry-lbl">ORBITAL HUB</span>
+                    <span class="telemetry-val">LEO-07 Array</span>
+                  </div>
+                </div>
+
+                <!-- Animated Equalizer Bands -->
+                <div class="mockup-equalizer-wrap">
+                  <div class="eq-header">
+                    <span>LIVE ACOUSTIC TELEMETRY</span>
+                    <span style="color:#38bdf8;">STEREO BINAURAL</span>
+                  </div>
+                  <div class="eq-bars-container">
+                    <span class="eq-bar" style="height: 60%"></span>
+                    <span class="eq-bar active" style="height: 90%"></span>
+                    <span class="eq-bar" style="height: 45%"></span>
+                    <span class="eq-bar active" style="height: 100%"></span>
+                    <span class="eq-bar" style="height: 75%"></span>
+                    <span class="eq-bar active" style="height: 85%"></span>
+                    <span class="eq-bar" style="height: 50%"></span>
+                    <span class="eq-bar active" style="height: 95%"></span>
+                    <span class="eq-bar" style="height: 40%"></span>
+                    <span class="eq-bar active" style="height: 70%"></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- FLOATING ACCENT CHIP OVERLAY -->
+            <div class="floating-mockup-chip chip-left">
+              <i class="fas fa-microscope" style="color:#a855f7;"></i>
+              <div>
+                <strong>Peer-Verified</strong>
+                <span>Scientific Audio Papers</span>
+              </div>
+            </div>
+
+            <div class="floating-mockup-chip chip-right">
+              <i class="fas fa-shield-halved" style="color:#10b981;"></i>
+              <div>
+                <strong>Encrypted Stream</strong>
+                <span>PGP Key Protected</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OUR STORY & BROADCAST MISSION SECTION -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="story-mission-grid">
+          
+          <div class="story-card anti-gravity-card">
+            <span class="badge-category badge-orange" style="margin-bottom: 1rem;">OUR PODCAST STORY</span>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: #fff;">From Subterranean Audio Feeds to LEO Array</h2>
+            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.2rem;">
+              In 2022, an independent collective of sound engineers, quantum physicists, and investigative journalists launched an encrypted subterranean audio podcast feed covering breakthroughs in quantum computing and bio-luminescent urban culture.
+            </p>
+            <p style="color: var(--text-muted); line-height: 1.7;">
+              By 2026, that feed grew into AETHERIA AUDIO—a global podcast network broadcasting continuously on Frequency 441.8 MHz to over 4.8 million monthly listeners across the globe and Low-Earth Orbit habitats.
+            </p>
+          </div>
+
+          <div>
+            <div class="section-title-wrapper" style="margin-bottom: 1.5rem;">
+              <div class="section-accent-line"></div>
+              <h2 class="headline-section text-gradient-cyan">BROADCAST & PODCAST PHILOSOPHY</h2>
+            </div>
+            
+            <div class="mission-pillars">
+              <div class="pillar-item">
+                <div class="pillar-icon"><i class="fas fa-podcast"></i></div>
+                <div>
+                  <h4 style="font-size: 1.1rem; color: #fff;">Unfiltered Studio Access</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-muted);">Unedited podcast conversations with leading researchers, orbital engineers, and speculative thinkers.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);"><i class="fas fa-sliders-h"></i></div>
+                <div>
+                  <h4 style="font-size: 1.1rem; color: #fff;">High-Fidelity Spatial Audio</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-muted);">Recorded using bi-directional 3D binaural acoustic arrays for immersive podcast listening experiences.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <div class="pillar-icon" style="background: rgba(255, 107, 0, 0.15); color: var(--accent-orange);"><i class="fas fa-atom"></i></div>
+                <div>
+                  <h4 style="font-size: 1.1rem; color: #fff;">Peer-Verified Scientific Dispatches</h4>
+                  <p style="font-size: 0.88rem; color: var(--text-muted);">Every scientific claim is vetted by active laboratory researchers before podcast episode release.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE PRODUCERS & HOSTS -->
+    <section class="section-padding" style="background: rgba(12, 13, 20, 0.5);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-accent-line"></div>
+            <h2 class="headline-section text-gradient-purple">EXECUTIVE PRODUCERS & PODCAST HOSTS</h2>
+          </div>
+          <span style="color: var(--text-muted); font-size: 0.85rem;">STUDIO LEADERSHIP</span>
+        </div>
+
+        <div class="editorial-team-grid">
+          
+          <div class="team-card anti-gravity-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Dr. Elena Vance" class="team-photo">
+            <div class="team-info">
+              <h3 class="team-name">Dr. Elena Vance</h3>
+              <p class="team-title">EXECUTIVE PRODUCER / QUANTUM PODCAST HOST</p>
+              <p class="team-bio">Former CERN physicist with 15 years investigating topological quantum computing and neural soundscapes.</p>
+            </div>
+          </div>
+
+          <div class="team-card anti-gravity-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Marcus Vance" class="team-photo">
+            <div class="team-info">
+              <h3 class="team-name">Marcus Vance</h3>
+              <p class="team-title" style="color: var(--accent-cyan);">EXECUTIVE PRODUCER / ORBITAL FINANCE HOST</p>
+              <p class="team-bio">Pioneer in space commercial docks, microgravity market logistics, and decentralized autonomous trade.</p>
+            </div>
+          </div>
+
+          <div class="team-card anti-gravity-card">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Aria Thorne" class="team-photo">
+            <div class="team-info">
+              <h3 class="team-name">Aria Thorne</h3>
+              <p class="team-title" style="color: var(--accent-purple);">CREATIVE DIRECTOR / BIO-CULTURE HOST</p>
+              <p class="team-bio">Architect studying biophilic habitat design, bio-luminescent urban plants, and acoustic wellness domes.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FIELD CORRESPONDENTS & SOUND ENGINEERS -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-accent-line" style="background: var(--accent-orange);"></div>
+            <h2 class="headline-section text-gradient-orange">GLOBAL PODCAST CORRESPONDENTS</h2>
+          </div>
+          <span style="color: var(--text-muted); font-size: 0.85rem;">REMOTE AUDIO REPORTERS</span>
+        </div>
+
+        <div class="grid-4">
+          <div class="contributor-card anti-gravity-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Jaxson Thorne" class="contributor-img">
+            <h3 class="contributor-name">Jaxson Thorne</h3>
+            <span class="contributor-role" style="color: var(--accent-orange);">Zero-G Athletics Host • Tokyo Studio</span>
+          </div>
+
+          <div class="contributor-card anti-gravity-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80" alt="Chloe Bennet" class="contributor-img" style="border-color: var(--accent-purple);">
+            <h3 class="contributor-name">Chloe Bennet</h3>
+            <span class="contributor-role" style="color: var(--accent-purple);">Light-Field Cinema Host • Venice Studio</span>
+          </div>
+
+          <div class="contributor-card anti-gravity-card">
+            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=300&q=80" alt="Dr. Hiroshi Sato" class="contributor-img" style="border-color: var(--accent-cyan);">
+            <h3 class="contributor-name">Dr. Hiroshi Sato</h3>
+            <span class="contributor-role" style="color: var(--accent-cyan);">Tokamak Fusion Host • Zurich Studio</span>
+          </div>
+
+          <div class="contributor-card anti-gravity-card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Sophia Chen" class="contributor-img" style="border-color: var(--accent-orange);">
+            <h3 class="contributor-name">Sophia Chen</h3>
+            <span class="contributor-role" style="color: var(--accent-orange);">Quantum Security Host • Singapore Studio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PITCH A PODCAST / CONTACT DESK -->
+    <section class="container">
+      <div class="contact-section-wrap">
+        <div>
+          <span class="badge-category badge-tech" style="margin-bottom: 0.8rem;"><i class="fas fa-microphone"></i> SUBMIT A PODCAST PITCH</span>
+          <h2 style="font-size: 2.2rem; color: #fff; margin-bottom: 1rem;">PITCH YOUR PODCAST SHOW OR BECOME A GUEST</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+            Have a scientific whitepaper, speculative breakthrough, or podcast pitch? Transmit your proposal directly to our executive audio producers.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon-box"><i class="fas fa-satellite-dish"></i></div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff;">Orbital Broadcast Array</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Station 07 LEO Hub • Frequency 441.8 MHz</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon-box" style="background: rgba(168, 85, 247, 0.15); color: var(--accent-purple);"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff;">Encrypted Studio Email</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">pitch@aetheria.mag • PGP Key ID: 0x9F4B</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon-box" style="background: rgba(255, 107, 0, 0.15); color: var(--accent-orange);"><i class="fas fa-headphones"></i></div>
+              <div>
+                <h4 style="font-size: 1rem; color: #fff;">Global Recording Studios</h4>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Neo-Tokyo, Zurich, Venice, Singapore, LEO Station</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <form id="about-contact-form" class="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">FULL NAME / CALLSIGN</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dr. Aris Thorne" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">ENCRYPTED EMAIL ADDRESS</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="name@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">PODCAST PROPOSAL CATEGORY</label>
+              <select id="contact-subject" class="form-input">
+                <option value="guest">Podcast Guest Pitch</option>
+                <option value="show">New Podcast Show Series Proposal</option>
+                <option value="research">Scientific Paper Audio Adaptation</option>
+                <option value="general">Sponsorship & Syndication Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">PODCAST SHOW PITCH DETAILS</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Describe your topic, guest bio, or podcast proposal..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-subscribe" style="width: 100%; text-align: center; margin-top: 0.5rem;">
+              <i class="fas fa-paper-plane"></i> TRANSMIT PITCH TO PRODUCERS
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PODCAST NEWSLETTER SUBSCRIPTION SECTION -->
+    <section class="container" id="newsletter-box">
+      <div class="newsletter-section">
+        <div class="newsletter-glow"></div>
+        <span class="badge-category badge-tech" style="margin-bottom: 1rem;"><i class="fas fa-podcast"></i> PODCAST DISPATCH</span>
+        <h2 class="headline-section newsletter-title text-gradient-purple">SUBSCRIBE TO WEEKLY PODCAST DROPS</h2>
+        <p class="newsletter-desc">Receive exclusive podcast episodes, show notes, unedited audio feeds, and soundscape releases directly in your encrypted inbox.</p>
+
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email or audio player key..." required>
+          <button type="submit" class="btn-subscribe"><i class="fas fa-rss"></i> SUBSCRIBE PODCASTS</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- EPISODE MODAL -->
+  <div id="article-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button class="modal-close-btn" onclick="closeModal()"><i class="fas fa-times"></i></button>
+      <div class="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- MAIN FOOTER -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon"><i class="fas fa-podcast"></i></div>
+            AETHERIA AUDIO
+          </a>
+          <p class="footer-brand-desc">
+            The world's premier anti-gravity podcast network & digital audio magazine. Exploring quantum audio telemetry, deep space economics, synthetic biology, and cyber audio culture.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="#" class="social-link" aria-label="Apple Podcasts"><i class="fas fa-podcast"></i></a>
+            <a href="#" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">PODCAST MENU</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Podcasts</a></li>
+            <li><a href="news.html">Podcast Episodes</a></li>
+            <li><a href="categories.html">Show Channels</a></li>
+            <li><a href="about.html">About Studio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">SHOW GENRES</h4>
+          <ul class="footer-links-list">
+            <li><a href="categories.html#tech">Quantum Tech Podcasts</a></li>
+            <li><a href="categories.html#business">Orbital Finance Podcasts</a></li>
+            <li><a href="categories.html#sports">Zero-G Athletics Podcasts</a></li>
+            <li><a href="categories.html#lifestyle">Bio-Living Podcasts</a></li>
+            <li><a href="categories.html#science">Deep Science Podcasts</a></li>
+            <li><a href="categories.html#entertainment">Light-Field Audio Shows</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">AUDIO FREQUENCY</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1rem;">
+            Station 07 LEO Array<br>
+            Encrypted Audio Frequency: 441.8 MHz<br>
+            Podcast Studio: audio@aetheria.mag
+          </p>
+          <span class="badge-category badge-cyan" style="font-size: 0.7rem;"><i class="fas fa-signal"></i> BROADCASTING LIVE</span>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 2026 AETHERIA AUDIO Podcast Network. All Rights Reserved.</span>
+        <span>Anti-Gravity Audio Engine v2.6.0 • Dark Mode Native</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
