@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCategoryTabSwitcher();
   initContactForm();
   initGlobalAudioPlayer();
+  initScrollNavigation();
 });
 
 /* -------------------------------------------------------------------------- */
@@ -190,6 +191,13 @@ function initMobileNav() {
     menu.classList.toggle('mobile-open');
     const isOpen = menu.classList.contains('mobile-open');
     toggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+  });
+
+  menu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('mobile-open');
+      toggle.innerHTML = '<i class="fas fa-bars"></i>';
+    });
   });
 }
 
@@ -753,3 +761,50 @@ window.toggleTaskoraMobileMenu = function() {
   const menu = document.getElementById('taskora-mobile-menu');
   if (menu) menu.classList.toggle('open');
 };
+
+/* -------------------------------------------------------------------------- */
+/* Top-to-Bottom / Back-to-Top Floating Scroll Navigation                      */
+/* -------------------------------------------------------------------------- */
+function initScrollNavigation() {
+  const scrollBtn = document.getElementById('floating-scroll-btn');
+  if (!scrollBtn) return;
+
+  const icon = scrollBtn.querySelector('i');
+
+  function updateScrollState() {
+    const scrollPos = window.scrollY || window.pageYOffset;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+    if (scrollPos > docHeight - 150) {
+      if (icon) icon.className = 'fas fa-arrow-up';
+      scrollBtn.setAttribute('title', 'Scroll to top');
+      scrollBtn.setAttribute('data-direction', 'top');
+    } else if (scrollPos < 200) {
+      if (icon) icon.className = 'fas fa-arrow-down';
+      scrollBtn.setAttribute('title', 'Scroll to bottom');
+      scrollBtn.setAttribute('data-direction', 'bottom');
+    } else {
+      if (icon) icon.className = 'fas fa-arrow-up';
+      scrollBtn.setAttribute('title', 'Scroll to top');
+      scrollBtn.setAttribute('data-direction', 'top');
+    }
+  }
+
+  window.addEventListener('scroll', updateScrollState, { passive: true });
+  updateScrollState();
+
+  scrollBtn.addEventListener('click', () => {
+    const direction = scrollBtn.getAttribute('data-direction');
+    if (direction === 'bottom') {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth'
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  });
+}

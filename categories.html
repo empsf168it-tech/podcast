@@ -8,6 +8,8 @@
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,9 +37,9 @@
         <!-- PODCAST NAVIGATION MENU -->
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link">HOME PODCASTS</a></li>
+          <li><a href="about.html" class="nav-link">ABOUT STUDIO</a></li>
           <li><a href="news.html" class="nav-link">PODCAST EPISODES</a></li>
           <li><a href="categories.html" class="nav-link active">SHOW CHANNELS</a></li>
-          <li><a href="about.html" class="nav-link">ABOUT STUDIO</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -119,7 +121,7 @@
 
     </section>
 
-    <div class="container">
+    <div class="container" style="padding-top: 3.5rem;">
 
       <!-- 1. TECHNOLOGY PODCAST CHANNEL -->
       <section id="tech" class="category-section-block">
@@ -556,7 +558,7 @@
 
           <article class="anti-gravity-card" data-article-id="4">
             <div class="podcast-cover-wrap">
-              <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" alt="Generative Art">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Generative Art">
               <div class="play-overlay">
                 <button class="podcast-play-btn"><i class="fas fa-play"></i></button>
               </div>
@@ -629,9 +631,9 @@
           <h4 class="footer-col-title">PODCAST MENU</h4>
           <ul class="footer-links-list">
             <li><a href="index.html">Home Podcasts</a></li>
+            <li><a href="about.html">About Studio</a></li>
             <li><a href="news.html">Podcast Episodes</a></li>
             <li><a href="categories.html">Show Channels</a></li>
-            <li><a href="about.html">About Studio</a></li>
           </ul>
         </div>
 
@@ -661,10 +663,18 @@
 
       <div class="footer-bottom-bar">
         <span>© 2026 AETHERIA AUDIO Podcast Network. All Rights Reserved.</span>
+        <button class="footer-scroll-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to Top">
+          <i class="fas fa-arrow-up"></i> BACK TO TOP
+        </button>
         <span>Anti-Gravity Audio Engine v2.6.0 • Dark Mode Native</span>
       </div>
     </div>
   </footer>
+
+  <!-- Floating Top to Bottom / Back to Top Action Button (Visible in all sections) -->
+  <button id="floating-scroll-btn" class="floating-scroll-btn" aria-label="Scroll top to bottom">
+    <i class="fas fa-arrow-down" id="scroll-arrow-icon"></i>
+  </button>
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
